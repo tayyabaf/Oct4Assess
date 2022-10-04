@@ -32,11 +32,16 @@ public class Main {
         flightCrewJobList.add(flightCrewJob1);
         flightCrewJobList.add(flightCrewJob2);
 
+        System.out.println("============");
         FlightApp.printEachFlightCrewJob(flightCrewJobList);
+
+        System.out.println("============");
 
         FlightApp.sortAndPrintFlightCrewJobsByTitle(flightCrewJobList);
 
-        FlightApp.printAllJobsExceptThisCrewMemberJob(flightCrewJobList, crewMember2);
+        System.out.println("============");
+
+        FlightApp.printAllJobsExceptThisCrewMemberJob(flightCrewJobList, crewMember3);
 
 
 

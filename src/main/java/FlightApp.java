@@ -18,7 +18,9 @@ public class FlightApp {
     public static void sortAndPrintFlightCrewJobsByTitle(ArrayList<FlightCrewJob> listOfJobs){
         Comparator jobsComparator = new FlightCrewJobsComparator();
         Collections.sort(listOfJobs, jobsComparator);
-        System.out.println(listOfJobs);
+        for (FlightCrewJob x : listOfJobs) {
+            System.out.println(x);
+        }
     }
 
     public static void printAllJobsExceptThisCrewMemberJob(ArrayList<FlightCrewJob> listOfJobs, CrewMember crew){
